@@ -1,0 +1,10 @@
+<resources>
+
+    <string name="app_name">04.Button</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">ButtonDemo</string>
+    <string name="submit1">Button 1</string>
+    <string name="submit2">Button 2</string>
+
+</resources>
