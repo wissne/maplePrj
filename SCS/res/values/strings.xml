@@ -1,0 +1,24 @@
+<resources>
+
+    <string name="app_name">3G Smart connect</string>
+    <string name="menu_settings">Setting</string>
+    <string name="title_activity_main">3G Smart connect</string>
+    <string name="enable">Enable 3G Smart connect</string>
+    <string name="disable">Disable 3G Smart connect</string>
+ 	<string name="enable_success">Success to open service</string>
+    <string name="disable_success">Success to close service</string>
+    <string name="scs">3G Smart connect</string>
+    <string name="hits_open_service">Open service in the background</string>
+    <string name="time_disable">Interval</string>
+    <string name="des_disable">How many minutes automatically connect again</string>
+    <string name="time_enable">Duration</string>
+    <string name="des_enable">Time of each connect</string>
+    <string name="mins">mins</string>
+    <string name="smart_connect">3G Smart connect</string>
+    <string name="time_connect">Interval connect</string>
+    <string name="min">mins</string>
+    <string name="enable_time_connect">Enable Interval service</string>
+    <string name="disable_time_connect">Disable Interval service</string>
+    <string name="enable_thread_success">Success to open service</string>
+    <string name="disable_thread_success">Success to close service</string>
+</resources>

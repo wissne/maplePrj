@@ -1,0 +1,56 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/Button01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="确定取消信息框" />
+
+    <Button
+        android:id="@+id/Button02"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="多个按钮信息框" />
+
+    <Button
+        android:id="@+id/Button03"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="列表框" />
+
+    <Button
+        android:id="@+id/Button04"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="单项选择列表框" />
+
+    <Button
+        android:id="@+id/Button05"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="进度条框" />
+
+    <Button
+        android:id="@+id/Button06"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="多项选择列表框" />
+
+    <Button
+        android:id="@+id/Button07"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="自定义布局" />
+
+    <Button
+        android:id="@+id/Button08"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="读取进度框" />
+
+</LinearLayout>

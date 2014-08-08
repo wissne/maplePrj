@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">捉个鬼</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">捉个鬼</string>
+    <string name="title_activity_setting">设置</string>
+    <string name="title_activity_prepare">游戏设置</string>
+    <string name="title_activity_host">等待连接</string>
+    <string name="title_activity_pre_join">准备连接</string>
+    <string name="title_activity_join">JoinActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_alert">提示信息</string>
+    <string name="ok">确定</string>
+    <string name="cancel">取消</string>
+</resources>

@@ -1,0 +1,192 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blue_bg"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:text="主机房号"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="24sp" />
+
+    <View
+        android:id="@+id/View02"
+        android:layout_width="wrap_content"
+        android:layout_height="6dp"
+        android:background="@drawable/fenge" />
+
+    <EditText
+        android:id="@+id/edtRoom"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/edittext_selector"
+        android:ems="10"
+        android:hint="请输入主机房号"
+        android:inputType="number"
+        android:maxLength="2"
+        android:text="1" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:maxEms="3"
+        android:maxLines="1"
+        android:text="玩家数量"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="24sp" />
+
+    <View
+        android:id="@+id/View3"
+        android:layout_width="wrap_content"
+        android:layout_height="6dp"
+        android:background="@drawable/fenge" />
+
+    <EditText
+        android:id="@+id/edtTotalNum"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/edittext_selector"
+        android:ems="10"
+        android:hint="请输入玩家的数量"
+        android:inputType="number"
+        android:maxLength="2"
+        android:text="10" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:text="鬼数量"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="24sp" />
+
+    <View
+        android:id="@+id/View3"
+        android:layout_width="wrap_content"
+        android:layout_height="6dp"
+        android:background="@drawable/fenge" />
+
+    <EditText
+        android:id="@+id/edtGhostNum"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/edittext_selector"
+        android:ems="10"
+        android:hint="请输入鬼的数量"
+        android:inputType="number"
+        android:maxLines="1"
+        android:text="3" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="白痴数量"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="24sp" />
+
+    <View
+        android:id="@+id/View3"
+        android:layout_width="wrap_content"
+        android:layout_height="6dp"
+        android:background="@drawable/fenge" />
+
+    <EditText
+        android:id="@+id/edtIdiotNum"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/edittext_selector"
+        android:ems="10"
+        android:hint="请输入白痴的数量"
+        android:inputType="number"
+        android:text="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="自定义词语"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="24sp" />
+
+        <CheckBox
+            android:id="@+id/chkCustomWord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/View01"
+        android:layout_width="wrap_content"
+        android:layout_height="6dp"
+        android:background="@drawable/fenge" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <EditText
+            android:id="@+id/edtPeopleWord"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/edittext_selector"
+            android:ems="20"
+            android:enabled="false"
+            android:layout_marginRight="5dp"
+            android:hint="平民的词语"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/edtIdiotWord"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/edittext_selector"
+            android:ems="20"
+            android:enabled="false"
+            android:layout_marginLeft="5dp"
+            android:hint="白痴的词语"
+            android:singleLine="true" >
+
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent" android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/btnPreOK"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/btn_ok_selector"
+            android:text="确定" />
+
+        <Button
+            android:id="@+id/btnPreCancel"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/btn_cancel_selector"
+            android:text="取消" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>无标题文档</title>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-2.0.3.js"></script>
+</head>
+
+<body>
+<script>
+    $(document).ready(function (){
+        $("p").bind("click", function(){alert($(this).text())});
+        $("p").each(function(i){$(this).text($(this).text() + "_" + i)});
+        $("p").hid
+    });
+</script>
+<p>111</p>
+<p>222</p>
+<p>333</p>
+<p>444</p>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source source="LOCAL" name="MySQL - test" uuid="d5a18ff1-3ddb-47e8-a01d-8129a6704ae7">
+    <database-info product="MySQL" version="5.0.96-community-nt" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.29 ( Revision: alexander.soklakov@oracle.com-20140120140810-s44574olh90i6i4l )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower"/>
+    <schema name="" catalog="test"/>
+    <table name="news" schema="" catalog="test" type="TABLE">
+      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="author" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="date" sqlType="DATETIME" precision="19" scale="0" nullable="true" jdbcType="93"/>
+      <column name="title" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="id"/>
+    </table>
+    <table name="test_body" schema="" catalog="test" type="TABLE">
+      <column name="BODY_ID" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <primary-key name="PRIMARY" columns="BODY_ID"/>
+    </table>
+    <table name="test_heart" schema="" catalog="test" type="TABLE">
+      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <primary-key name="PRIMARY" columns="id"/>
+    </table>
+  </data-source>
+  <data-source source="LOCAL" name="src:main:resources:hibernate.cfg.xml" uuid="00dd198f-bc4b-4a22-91a1-e7c2d811b775">
+    <database-info product="MySQL" version="5.0.96-community-nt" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.29 ( Revision: alexander.soklakov@oracle.com-20140120140810-s44574olh90i6i4l )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower"/>
+    <schema name="" catalog="test"/>
+    <table name="news" schema="" catalog="test" type="TABLE">
+      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="author" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="date" sqlType="DATETIME" precision="19" scale="0" nullable="true" jdbcType="93"/>
+      <column name="title" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="id"/>
+    </table>
+    <table name="t_customer" schema="" catalog="test" type="TABLE">
+      <column name="customer_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="customer_name" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="customer_id"/>
+      <exported-key name="FK_h8jfaovysk9s5fln3thk5jici" table="t_order" schema="" catalog="test" columns="customer_id"/>
+    </table>
+    <table name="t_order" schema="" catalog="test" type="TABLE">
+      <column name="order_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="order_name" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="customer_id" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <primary-key name="PRIMARY" columns="order_id"/>
+      <foreign-key name="FK_h8jfaovysk9s5fln3thk5jici" columns="customer_id" ref-table="t_customer" ref-schema="" ref-catalog="test" ref-columns="customer_id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <index name="FK_h8jfaovysk9s5fln3thk5jici" unique="false" columns="customer_id"/>
+    </table>
+    <table name="test_body" schema="" catalog="test" type="TABLE">
+      <column name="BODY_ID" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <primary-key name="PRIMARY" columns="BODY_ID"/>
+    </table>
+    <table name="test_heart" schema="" catalog="test" type="TABLE">
+      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <primary-key name="PRIMARY" columns="id"/>
+    </table>
+  </data-source>
+</component>

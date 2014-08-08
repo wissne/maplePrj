@@ -1,0 +1,73 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blue_bg"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tvJoinTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="捉个鬼"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="24sp" />
+
+    <View
+        android:id="@+id/View3"
+        android:layout_width="wrap_content"
+        android:layout_height="6dp"
+        android:background="@drawable/fenge" />
+
+    <EditText
+        android:id="@+id/edtJoinOut"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:enabled="true"
+        android:focusable="false"
+        android:clickable="false"
+        android:inputType="textMultiLine"
+        android:maxLines="200"
+        android:minLines="15"
+        android:background="@drawable/edittext_selector"
+        android:lines="15"
+        android:gravity="top"
+        android:scrollbars="vertical" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/btnJoinOpenConn"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/btn_ok_selector"
+            android:text="加入游戏" />
+
+        <Button
+            android:id="@+id/btnJoinCloseConn"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:enabled="false"
+            android:background="@drawable/btn_cancel_selector"
+            android:text="离开游戏" />
+    </LinearLayout>
+    
+        <Button
+        android:id="@+id/btnJoinSendMsg"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn_ok_selector"
+        android:text="我要发言"
+        android:visibility="gone" />
+
+</LinearLayout>

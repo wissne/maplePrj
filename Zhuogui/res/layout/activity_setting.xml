@@ -1,0 +1,59 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@drawable/blue_bg"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="游戏昵称"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="24sp" />
+    
+    <View
+        android:id="@+id/View3"
+        android:layout_width="wrap_content"
+        android:layout_height="6dp"
+        android:background="@drawable/fenge" />
+
+
+    <EditText
+        android:id="@+id/edtSettingName"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/edittext_selector"
+        android:ems="10"
+        android:hint="请设置你的游戏昵称"
+        android:singleLine="true" >
+
+        <requestFocus />
+    </EditText>
+
+    <LinearLayout
+        android:layout_width="match_parent" android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/btnSettingOK"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/btn_ok_selector"
+            android:text="确定" />
+
+        <Button
+            android:id="@+id/btnSettingCancel"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/btn_cancel_selector"
+            android:text="取消" />
+    </LinearLayout>
+
+</LinearLayout>

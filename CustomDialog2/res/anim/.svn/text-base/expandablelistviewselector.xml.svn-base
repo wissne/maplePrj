@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">  
+    <item android:state_expanded="true" android:drawable="@drawable/group_expand_icon" />  
+    <item android:width="2dp" android:height="10px" android:drawable="@drawable/group_icon" />  
+</selector>

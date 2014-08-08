@@ -8,6 +8,7 @@ import android.view.Menu;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
+import android.widget.EditText;
 
 public class MainActivity extends Activity {
 	
@@ -15,8 +16,13 @@ public class MainActivity extends Activity {
 
 
 
+	private static final String CONTEXT = "CONTEXT";
+
+
+
 	private Button btn1;
 	private Button btn2;
+	private EditText edit;
 	private Intent intent = new Intent();
 	private OnClickListener listener = new OnClickListener() {
 		
@@ -47,8 +53,14 @@ public class MainActivity extends Activity {
 
         btn1 = (Button) findViewById(R.id.button1);
         btn2 = (Button) findViewById(R.id.button2);
+        edit = (EditText) findViewById(R.id.editText1);
         btn1.setOnClickListener(listener);
         btn2.setOnClickListener(listener);
+        if (null != savedInstanceState && savedInstanceState.containsKey(CONTEXT)) {
+	        String s = savedInstanceState.getString(CONTEXT);
+	        edit.setText(s);
+	        Log.i(TAG, "get instance state");
+        }
         Log.i(TAG, "onCreate");
     }
 
@@ -57,4 +69,15 @@ public class MainActivity extends Activity {
         getMenuInflater().inflate(R.menu.activity_main, menu);
         return true;
     }
+
+	@Override
+	protected void onSaveInstanceState(Bundle outState) {
+		// TODO Auto-generated method stub
+		super.onSaveInstanceState(outState);
+		String context = edit.getText().toString();
+		outState.putString(CONTEXT, context);
+		Log.i(TAG, "save instance state");
+	}
+    
+    
 }

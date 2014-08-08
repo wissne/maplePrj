@@ -1,0 +1,24 @@
+<resources>
+
+    <string name="app_name">3G智能省电</string>
+    <string name="menu_settings">设置</string>
+    <string name="title_activity_main">3G智能省电</string>
+    <string name="enable">开启3G智能省电服务</string>
+    <string name="disable">关闭3G智能省电服务</string>
+ 	<string name="enable_success">成功开启3G智能省电服务</string>
+    <string name="disable_success">成功关闭3G智能省电服务</string>
+    <string name="scs">3G智能省电</string>
+    <string name="hits_open_service">开启服务后可在后台3G智能省电网络</string>
+    <string name="time_disable">连接时间间隔</string>
+    <string name="des_disable">多少分钟自动连接一次</string>
+    <string name="time_enable">每次连接时间</string>
+    <string name="des_enable">连接一次的分钟数</string>
+    <string name="mins">分钟</string>
+    <string name="smart_connect">3G智能省电</string>
+    <string name="time_connect">间隔连接</string>
+    <string name="min">分钟</string>
+    <string name="enable_time_connect">开启间隔连接服务</string>
+    <string name="disable_time_connect">关闭间隔连接服务</string>
+    <string name="enable_thread_success">成功开启间隔连接服务</string>
+    <string name="disable_thread_success">成功关闭间隔连接服务</string>
+</resources>

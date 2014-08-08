@@ -1,0 +1,2 @@
+eclipse.preferences.version=1
+org.grails.ide.eclipse.explorer.ordering=EDOMAIN;ECONTROLLERS;EVIEWS;ETAGLIB;ESERVICES;EUTILS;ESCRIPTS;EI18N;ECONF;Ssrc/java;Ssrc/groovy;Stest/unit;Stest/integration;ETEST_REPORTS;EPLUGINS;ECLASSPATH_CONTAINERS;Sapplication.properties;

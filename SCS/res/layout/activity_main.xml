@@ -1,0 +1,137 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="wrap_content"
+        android:layout_height="8px"
+        android:background="@drawable/fenge" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/smart_connect"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#FF8C00" />
+    <View
+        android:id="@+id/view2"
+        android:layout_width="wrap_content"
+        android:layout_height="3px"
+        android:background="@drawable/fenge" />
+
+    <View
+        android:id="@+id/View3"
+        android:layout_width="wrap_content"
+        android:layout_height="8px"
+        android:background="@drawable/fenge" />
+    <View
+        android:id="@+id/view4"
+        android:layout_width="wrap_content"
+        android:layout_height="3px"
+        android:background="@drawable/fenge" />    
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/time_disable" />
+
+    <SeekBar
+        android:id="@+id/seekBarDisable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/des_disable"
+        android:max="@integer/max_disable"
+        android:progress="30"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/tvDisable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:enabled="false"
+            android:singleLine="true"
+            android:text="30"
+            android:textAllCaps="false" />
+
+        <TextView
+            android:id="@+id/TextView01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:enabled="false"
+            android:singleLine="true"
+            android:text="@string/min"
+            android:textAllCaps="false" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/time_enable" />
+
+    <SeekBar
+        android:id="@+id/seekBarEnable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/des_enable"
+        android:max="@integer/max_enable"
+        android:progress="1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/tvEnable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="1" />
+
+        <TextView
+            android:id="@+id/TextView02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:singleLine="true"
+            android:text="@string/min"
+            android:textAllCaps="false" />
+
+    </LinearLayout>
+
+    <ToggleButton
+        android:id="@+id/toggleService"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:hint="@string/hits_open_service"
+        android:text="@string/scs"
+        android:textOff="@string/enable"
+        android:textOn="@string/disable" />
+
+    <ToggleButton
+        android:id="@+id/toggleThread"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/time_connect"
+        android:textOff="@string/enable_time_connect"
+        android:visibility="gone"
+        android:textOn="@string/disable_time_connect" />
+
+</LinearLayout>
